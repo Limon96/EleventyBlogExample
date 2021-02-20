@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>Eleventy Blog</title>
+    </head>
+    <body>
+        <h1>Eleventy Blog</h1>
+        
+Hello world! Welcome to the Eleventy Blog
+    </body>
+</html>
