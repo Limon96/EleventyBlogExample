@@ -2,8 +2,8 @@
 layout: layouts/post.njk
 title: My first post
 description : The first post on Eleventy Blog
-date: 2021-02-19
-featuredImage: /images/uploads/img1.jpg
+date : 2021-02-19
+featuredImage : /images/uploads/img1.jpg
 ---
 
 Что такое Lorem Ipsum?
