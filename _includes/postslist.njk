@@ -3,8 +3,8 @@
         <li>
             <a href="{{ post.url | url }}">{{ post.data.title }}</a>
             -
-            <span>{{ post.data.description }}</span>
-            <a href="{{ post.url | url }}"><img src="{{ post.data.featuredImage | url }}" width="100px" alt="{{ post.data.featuredImage }}"></a>
+            <span>{{ post.data.description }}</span><br>
+            <a href="{{ post.url | url }}"><img src="{{ post.data.featuredImage | url }}" width="100px" alt="{{ post.data.title }}"></a>
         </li>
     {% endfor %}
 </ul>
