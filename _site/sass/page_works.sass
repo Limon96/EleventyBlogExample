@@ -1,0 +1,27 @@
+.page-works--content
+
+	.page-title
+		position: relative
+		@include adaptiv-value(width, 850, 240, 0)
+		@include adaptiv-value(margin-top, 100, 30, 0)
+		@include adaptiv-value(margin-bottom, 100, 30, 0)
+
+		//margin-top: calc(100px + (20 - 10) * ((100vw - 320px) / (1400 - 320)))
+
+		&:before
+			content: ''
+			background: url("/icon/se-preload.gif") no-repeat 50% 50%/100%
+			position: absolute
+			top: 5px
+			@include adaptiv-value(width, 180, 50, 0)
+			height: 100%
+			right: 0
+
+	.title-element
+		position: absolute
+		top: -50%
+		@include adaptiv-value(width, 110, 50, 0)
+		height: auto
+		right: 2vw
+		transform: translate(0, -50%)
+		transition-delay: .8s

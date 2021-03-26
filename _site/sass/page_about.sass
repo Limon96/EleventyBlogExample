@@ -1,0 +1,54 @@
+// Variables
+@import 'variable.sass'
+
+/* Page Contacts */
+.page-about--content
+	position: relative
+
+	.page-title
+		position: relative
+		@include adaptiv-value(width, 800, 240, 0)
+		@include adaptiv-value(margin-top, 100, 30, 0)
+		@include adaptiv-value(margin-bottom, 100, 30, 0)
+
+		&:before
+			content: ''
+			background: url("/icon/te.gif") no-repeat 0 0/100%
+			position: absolute
+			top: -10px
+			@include adaptiv-value(width, 360, 50, 0)
+			height: 100%
+			left: 36%
+
+	.title-element
+		position: absolute
+		top: -60%
+		@include adaptiv-value(width, 220, 50, 0)
+		height: auto
+		right: 0
+		transform: translate(0, -50%)
+		transition-delay: .8s
+
+.page-about--section-two
+
+	.page-about--content
+		position: relative
+		padding-bottom: 15vh
+		min-height: 100vh
+
+	.page-about-text
+		flex: 0 1 50%
+		position: relative
+		padding: 0 3% 0 0
+		max-width: 600px
+
+		p
+			position: relative
+			margin-bottom: 20px
+			line-height: 1.6
+			@include adaptiv-value(font-size, 20, 20, 0)
+
+	.page-about-element
+		flex: 0 1 50%
+		position: relative
+		transform: translate(50%, 0)

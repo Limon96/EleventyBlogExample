@@ -1,0 +1,60 @@
+/* Page Careers */
+.page-careers--content
+
+	.page-title
+		position: relative
+		@include adaptiv-value(width, 850, 240, 0)
+		@include adaptiv-value(margin-top, 100, 30, 0)
+		@include adaptiv-value(margin-bottom, 100, 30, 0)
+
+		&:before
+			content: ''
+			background: url("/icon/сomp.gif") no-repeat 50% 50%/100%
+			position: absolute
+			top: 10%
+			@include adaptiv-value(width, 150, 50, 0)
+			height: 100%
+			left: 43%
+
+	.title-element
+		position: absolute
+		top: -60%
+		@include adaptiv-value(width, 140, 50, 0)
+		height: auto
+		right: 0
+		transform: translate(0, -50%)
+		transition-delay: .8s
+
+.page-careers--section-two
+	position: relative
+	overflow: hidden
+
+	.page-careers--content
+		position: relative
+		padding: 60px 4vw
+		min-height: 50vh
+
+	.page-careers--text
+		flex: 0 1 45%
+		position: relative
+		padding: 20% 3% 0 0
+
+		.mail-link
+			position: relative
+			display: inline-block
+			transition: .3s
+			@include adaptiv-value(font-size, 32, 20, 0)
+
+			&:hover
+				transform: scale(1.2)
+
+		.worker-item
+			border-bottom: 2px solid #151515
+			position: relative
+			padding: 30px 0 10px
+			line-height: 1.6
+			@include adaptiv-value(font-size, 32, 20, 0)
+
+	.page-careers-element
+		flex: 0 1 55%
+		position: relative

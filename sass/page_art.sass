@@ -1,0 +1,30 @@
+// Variables
+@import 'variable.sass'
+
+/* Page Contacts */
+.page-art--content
+
+	.page-title
+		position: relative
+		@include adaptiv-value(width, 850, 240, 0)
+		@include adaptiv-value(margin-top, 100, 30, 0)
+		@include adaptiv-value(margin-bottom, 100, 30, 0)
+
+		&:before
+			content: ''
+			background: url("/icon/peramon-yellow.gif") no-repeat 50% 50%/100%
+			position: absolute
+			top: -2px
+			@include adaptiv-value(width, 130, 50, 0)
+			height: 100%
+			max-height: 115px
+			left: -5px
+
+	.title-element
+		position: absolute
+		top: 28%
+		@include adaptiv-value(width, 280, 50, 0)
+		height: auto
+		right: 1vw
+		transform: translate(0, -50%)
+		transition-delay: .8s

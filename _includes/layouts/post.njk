@@ -1,7 +1,31 @@
 ---
 layout: layouts/base.njk
 ---
-<h2>{{ title }}</h2>
-<div><span>Date: {{ date }}</span></div>
-<div><img src="{{ featuredImage | url }}" alt="{{ featuredImage }}"></div>
-<div><p>{{ content | safe }}</p></div>
+<div class="sw-item preload-img anim_items no_anim">
+    <picture>
+        <source srcset="{{ featuredImage | url }}" media="(max-width: 768px)">
+        <source srcset="{{ featuredImageWebp | url }}">
+        <img class="b-lazy" data-src="{{ featuredImage | url }}" alt="{{ title }}">
+    </picture>
+    <div class="sw-item--title">{{ title }}</div>
+    <div class="sw-item--hover">
+        <a class="sw-item--play popap_open" href="#preview_32" title="Open Video">
+            <svg class="i-play">
+                <use xlink:href="/icon/sprite.svg#play"/>
+            </svg>
+            Quick play
+        </a>
+    </div>
+</div>
+<div id="preview_32" class="win-wrap popup">
+    <div class="popup--content popup_content">
+        <svg class="popap_close win-close i-close">
+            <use xlink:href="/icon/sprite.svg#close"/>
+        </svg>
+        <div class="popup--video">
+            <iframe title="vimeo-player" src="{{ video }}" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="popup--title">{{ title }}</div>
+        <div class="popup--text">{{ description | safe }}</div>
+    </div>
+</div>

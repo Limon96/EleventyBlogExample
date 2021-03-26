@@ -1,0 +1,91 @@
+// Variables
+@import 'variable.sass'
+
+// Mobile Css */
+@media (max-width: 759px)
+
+	// Left Bar
+	.right-bar
+		width: 90%
+		right: -90%
+
+	// Win modal
+	.win-close
+		background: rgba(0,0,0,.85)
+		border-radius: 50%
+		padding: 6px
+		right: 5px
+		top: 5px
+		z-index: 1
+
+	// Page contacts
+	.page-contacts--section-two
+
+		.page-contacts--content
+			padding: 0 4vw 50px
+
+		.page-contacts--text
+			flex: 1 1 100%
+			order: 2
+			padding: 0
+
+		.page-contacts--element
+			flex: 1 1 100%
+			order: 1
+			max-width: 80%
+			margin: 0 auto
+
+	// Page carrers
+	.page-careers--section-two
+
+		.page-careers--text
+			flex: 0 1 70%
+
+		.page-careers-element
+			position: absolute
+			left: 50%
+			top: 0
+			z-index: 1
+			width: 100%
+			padding: 0 4vw 50px
+
+	.go-to-btn
+		display: none
+
+
+
+@media (max-width: 690px)
+	.sw-item
+		flex: 1 1 100%
+
+		&.preload-img
+			padding-bottom: 56%
+
+	// Page contacts
+	.page-contacts--section-two
+
+		.page-contacts--element
+			max-width: 60%
+
+		.soc-btn
+			display: none
+
+
+@media (max-width: 460px)
+	.header
+		padding: 6px 0 0
+
+	.header-content
+		.logo-wrap
+			max-width: 150px
+
+	.main-section-one
+		padding: 70px 0 40px
+
+	// Page contacts
+	.page-contacts--section-two
+		.page-contacts--content
+			padding: 0 4vw 50px
+
+		.page-contacts--element
+			max-width: 50%
