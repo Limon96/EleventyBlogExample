@@ -6,21 +6,6 @@ media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: pages
-    label: "Pages"
-    folder: "pages"
-    create: true
-    slug: "{{slug}}"
-    fields:
-    - { label: "Layout", name: "layout", widget: "string", default: "{{slug}}}.njk" }
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Description", name: "description", widget: "string" }
-    - { label: "Date", name: "date", widget: "date", default: "" }
-    - { label: "Post Body", name: "body", widget: "markdown" }
-    - { label: "Featured Image Small", name: "featuredImageSmall", widget: "image" }
-    - { label: "Featured Image", name: "featuredImage", widget: "image" }
-    - { label: "Featured Image Webp", name: "featuredImageWebp", widget: "image" }
-    - { label: "Video Link", name: "video", widget: "string" }
   - name: posts
     label: "Posts"
     folder: "posts"
@@ -36,3 +21,52 @@ collections:
     - { label: "Featured Image", name: "featuredImage", widget: "image" }
     - { label: "Featured Image Webp", name: "featuredImageWebp", widget: "image" }
     - { label: "Video Link", name: "video", widget: "string" }
+  - name: pages
+    label: "Pages"
+    files:
+    - label: "About Us Page"
+      name: "aboutus"
+      file: "pages/aboutus.md"
+      fields:
+      - { label: Layout, name: layout, widget: string }
+      - { label: Title, name: title, widget: string }
+      - { label: "Post Body", name: body, widget: markdown }
+    - label: "Art Page"
+      name: "art"
+      file: "pages/art.md"
+      fields:
+      - { label: Title, name: title, widget: string }
+      - { label: "Post Body", name: body, widget: markdown }
+      - label: Posts
+        name: postslist
+        widget: list
+        fields:
+        - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Description", name: "description", widget: "string" }
+        - { label: "Date", name: "date", widget: "date", default: "" }
+        - { label: "Post Body", name: "body", widget: "markdown" }
+        - { label: "Featured Image Small", name: "featuredImageSmall", widget: "image" }
+        - { label: "Featured Image", name: "featuredImage", widget: "image" }
+        - { label: "Featured Image Webp", name: "featuredImageWebp", widget: "image" }
+        - { label: "Video Link", name: "video", widget: "string" }
+    - label: "Careers Page"
+      name: "careers"
+      file: "pages/careers.md"
+      fields:
+      - { label: Title, name: title, widget: string }
+      - { label: "Post Body", name: body, widget: markdown }
+    - label: "Contacts Page"
+      name: "contacts"
+      file: "pages/contacts.md"
+      fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Email, name: email, widget: string }
+      - { label: "Post Body", name: body, widget: markdown }
+    - label: "Works Page"
+      name: "works"
+      file: "pages/works.md"
+      fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Intro, name: intro, widget: markdown }
+      - { label: "Post Body", name: body, widget: markdown }
