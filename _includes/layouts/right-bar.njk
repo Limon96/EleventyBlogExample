@@ -12,11 +12,9 @@
     </div>
     <div class="right-bar-scroll">
         <div class="right-bar-links">
-            <a class="right-bar--link" href="/pages/works.php">Works</a>
-            <a class="right-bar--link" href="/pages/art.php">Art</a>
-            <a class="right-bar--link" href="/pages/aboutus.php">About Us</a>
-            <a class="right-bar--link" href="/pages/careers.php">Careers</a>
-            <a class="right-bar--link" href="/pages/contacts.php">Contacts</a>
+            {%- for page in collections.pages -%}
+                <a class="right-bar--link" href="{{ page.url | url }}">{{ page.data.title }}</a>
+            {%- endfor -%}
         </div>
     </div>
 </div>

@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+---
+<!-- Main content -->
+<main class="main wrapper">
+    <!-- Section One ---------------------------------->
+    <section class="page-works main-section-one anim_items no_anim">
+        <div class="page-works--content content-wrap">
+            <div class="page-title">
+                <img class="title-element anim_items" src="/icon/works_g.svg" alt="Element">
+                <img class="title-text" src="/icon/works.svg" alt="Our works">
+            </div>
+            <div class="go-to-btn">
+                <a class="mouse" href="#section_2" title="Go to Section Works"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Works -->
+    {% set postslist = collections.posts %}
+    {% include "layouts/postslist.njk" %}
+</main>
