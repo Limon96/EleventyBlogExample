@@ -1,6 +1,6 @@
 ---
 layout: aboutus.njk
-title: About Us1
+title: About Us
 description: null
 date: 2021-03-26
 featuredImage: /image_web/img_small/Lego_ninjago.jpg
