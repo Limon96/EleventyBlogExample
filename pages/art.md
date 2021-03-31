@@ -1,14 +1,9 @@
 ---
 title: Art Projects
 postslist:
-  - body: >-
-      <!--StartFragment-->
-
-
-      Design development is always an exciting challenge which we're happy to accept! While working on full cg video with 3d animation of Robert the Robot we also created some composition design options for the scenes.
-
-
-      <!--EndFragment-->
+  - body: Design development is always an exciting challenge which we're happy to
+      accept! While working on full cg video with 3d animation of Robert the
+      Robot we also created some composition design options for the scenes.
     featuredImageWebp: /image_web/webp/Hi_human.webp
     layout: layouts/post.njk
     featuredImage: /image_web/Hi_human.jpg
@@ -21,8 +16,4 @@ postslist:
       Robert the Robot we also created some composition design options for the
       scenes.
 ---
-<!--StartFragment-->
-
 Design development is always an exciting challenge which we're happy to accept! While working on full cg video with 3d animation of Robert the Robot we also created some composition design options for the scenes.
-
-<!--EndFragment-->
