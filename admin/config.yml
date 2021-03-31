@@ -35,7 +35,7 @@ collections:
       name: "art"
       file: "pages/art.md"
       fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "art.njk" }
+      - { label: "Layout", name: "layout", widget: hidden, default: "art.njk" }
       - { label: Title, name: title, widget: string }
       - { label: "Post Body", name: body, widget: markdown }
       - label: Posts
