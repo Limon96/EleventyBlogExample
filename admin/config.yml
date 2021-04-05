@@ -23,10 +23,10 @@ collections:
       - { label: "Layout", name: "layout", widget: string, default: "art.njk" }
       - { label: Title, name: title, widget: string }
       - { label: "Post Body", name: body, widget: markdown }
-      - label: Posts
+      - label: Postslist
         name: postslist
         widget: list
-        slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+        slug: "{{title}}"
         fields:
         - { label: "Layout", name: "layout", widget: "string", default: "layouts/post.njk" }
         - { label: "Title", name: "title", widget: "string" }
@@ -43,7 +43,7 @@ collections:
       fields:
       - { label: Layout, name: layout, widget: string, default: "careers.njk" }
       - { label: Title, name: title, widget: string }
-      - { label: "Post Body", name: body, widget: markdown }
+      - { label: Email, name: email, widget: string }
     - label: "Contacts Page"
       name: "contacts"
       file: "pages/contacts.md"

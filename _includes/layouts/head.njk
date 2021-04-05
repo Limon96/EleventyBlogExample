@@ -2,7 +2,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Synticate Team</title>
+    {% if title %}
+        <title>{{ title }} - Synticate Team</title>
+    {% else %}
+        <title>Synticate Team</title>
+    {% endif %}
     <meta name="description" content="SYNTICATE - это CG Art Студия. Мы синтезируем законченный компьютерный контент, трехмерную и двухмерную анимационную и генеративную графику.">
     <meta name="keywords" content="3D 2D анимация, генеративная графика, компьютерный цифровой контент">
 

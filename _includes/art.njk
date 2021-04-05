@@ -28,7 +28,7 @@ layout : layouts/base.njk
                 </picture>
                 <div class="sw-item--title">{{ post.title }}</div>
                 <div class="sw-item--hover">
-                    <a class="sw-item--play popap_open" href="#preview_{{ post.fileSlug }}" title="Open Video">
+                    <a class="sw-item--play popap_open" href="#preview_{{ post.title }}" title="Open Video">
                         <svg class="i-play">
                             <use xlink:href="/icon/sprite.svg#play"/>
                         </svg>
@@ -36,7 +36,7 @@ layout : layouts/base.njk
                     </a>
                 </div>
             </div>
-            <div id="preview_{{ post.fileSlug }}" class="win-wrap popup">
+            <div id="preview_{{ post.title }}" class="win-wrap popup">
                 <div class="popup--content popup_content">
                     <svg class="popap_close win-close i-close">
                         <use xlink:href="/icon/sprite.svg#close"/>
