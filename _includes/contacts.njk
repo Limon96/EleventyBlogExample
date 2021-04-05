@@ -20,13 +20,12 @@ layout : layouts/base.njk
     <section id="section_2" class="page-contacts--section-two">
         <div class="page-contacts--content content-wrap flex jb">
             <div class="page-contacts--text anim_items no_anim">
-                <a class="mail-link" href="mailto:hi@synticate.team">Join us: hi@synticate.team</a>
-                <a class="mail-link" href="tel:+74952603777">+7 495 260-37-77</a>
+                <a class="mail-link" href="mailto:hi@synticate.team">Join us: {{ email }}</a>
+                <a class="mail-link" href="tel:{{ phone }}">{{ phone }}</a>
                 <!-- Location -->
                 <a id="location" class="page-contacts--address popap_open" href="#Popup_location" title="Show Location">
                     <p>
-                        Office 44, Novodmitrovskaya str. 1/1,<br>
-                        Moscow 127015
+                        {{ address | safe }}
                     </p>
                     <svg class="i-location">
                         <use xlink:href="/icon/sprite.svg#location"/>

@@ -51,15 +51,14 @@ collections:
       - { label: Layout, name: layout, widget: string, default: "contacts.njk" }
       - { label: Title, name: title, widget: string }
       - { label: Email, name: email, widget: string }
-      - { label: "Post Body", name: body, widget: markdown }
+      - { label: Telephone, name: phone, widget: string }
+      - { label: "Address", name: address, widget: markdown }
     - label: "Works Page"
       name: "works"
       file: "pages/works.md"
       fields:
       - { label: Layout, name: layout, widget: string, default: "works.njk" }
       - { label: Title, name: title, widget: string }
-      - { label: Intro, name: intro, widget: markdown }
-      - { label: "Post Body", name: body, widget: markdown }
   - label: "Posts"
     name: "posts"
     folder: "posts"
