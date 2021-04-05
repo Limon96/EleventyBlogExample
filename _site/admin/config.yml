@@ -6,21 +6,6 @@ media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: posts
-    label: "Posts"
-    folder: posts
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
-    fields:
-    - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Description", name: "description", widget: "string" }
-    - { label: "Date", name: "date", widget: "date", default: "" }
-    - { label: "Post Body", name: "body", widget: "markdown" }
-    - { label: "Featured Image Small", name: "featuredImageSmall", widget: "image" }
-    - { label: "Featured Image", name: "featuredImage", widget: "image" }
-    - { label: "Featured Image Webp", name: "featuredImageWebp", widget: "image" }
-    - { label: "Video Link", name: "video", widget: "string" }
   - name: pages
     label: "Pages"
     files:
@@ -75,3 +60,18 @@ collections:
       - { label: Title, name: title, widget: string }
       - { label: Intro, name: intro, widget: markdown }
       - { label: "Post Body", name: body, widget: markdown }
+  - label: "Posts"
+    name: "posts"
+    folder: "posts"
+    create: true
+    identifier_field: "title"
+    fields:
+    - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Description", name: "description", widget: "string" }
+    - { label: "Date", name: "date", widget: "date", default: "" }
+    - { label: "Post Body", name: "body", widget: "markdown" }
+    - { label: "Featured Image Small", name: "featuredImageSmall", widget: "image" }
+    - { label: "Featured Image", name: "featuredImage", widget: "image" }
+    - { label: "Featured Image Webp", name: "featuredImageWebp", widget: "image" }
+    - { label: "Video Link", name: "video", widget: "string" }
