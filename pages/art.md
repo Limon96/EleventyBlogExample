@@ -1,4 +1,5 @@
 ---
+layout: art.njk
 title: Art Projects
 postslist:
   - body: Design development is always an exciting challenge which we're happy to
