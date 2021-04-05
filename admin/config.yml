@@ -28,14 +28,14 @@ collections:
       name: "aboutus"
       file: "pages/aboutus.md"
       fields:
-      - { label: Layout, name: layout, widget: hidden, default: "aboutus.njk" }
+      - { label: Layout, name: layout, widget: string, default: "aboutus.njk" }
       - { label: Title, name: title, widget: string }
       - { label: "Post Body", name: body, widget: markdown }
     - label: "Art Page"
       name: "art"
       file: "pages/art.md"
       fields:
-      - { label: "Layout", name: "layout", widget: hidden, default: "art.njk" }
+      - { label: "Layout", name: "layout", widget: string, default: "art.njk" }
       - { label: Title, name: title, widget: string }
       - { label: "Post Body", name: body, widget: markdown }
       - label: Posts
@@ -43,7 +43,7 @@ collections:
         widget: list
         slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
         fields:
-        - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/post.njk" }
+        - { label: "Layout", name: "layout", widget: "string", default: "layouts/post.njk" }
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Description", name: "description", widget: "string" }
         - { label: "Date", name: "date", widget: "date", default: "" }
@@ -56,14 +56,14 @@ collections:
       name: "careers"
       file: "pages/careers.md"
       fields:
-      - { label: Layout, name: layout, widget: hidden, default: "careers.njk" }
+      - { label: Layout, name: layout, widget: string, default: "careers.njk" }
       - { label: Title, name: title, widget: string }
       - { label: "Post Body", name: body, widget: markdown }
     - label: "Contacts Page"
       name: "contacts"
       file: "pages/contacts.md"
       fields:
-      - { label: Layout, name: layout, widget: hidden, default: "contacts.njk" }
+      - { label: Layout, name: layout, widget: string, default: "contacts.njk" }
       - { label: Title, name: title, widget: string }
       - { label: Email, name: email, widget: string }
       - { label: "Post Body", name: body, widget: markdown }
@@ -71,7 +71,7 @@ collections:
       name: "works"
       file: "pages/works.md"
       fields:
-      - { label: Layout, name: layout, widget: hidden, default: "works.njk" }
+      - { label: Layout, name: layout, widget: string, default: "works.njk" }
       - { label: Title, name: title, widget: string }
       - { label: Intro, name: intro, widget: markdown }
       - { label: "Post Body", name: body, widget: markdown }
