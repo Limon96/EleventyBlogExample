@@ -36,4 +36,4 @@ postslist:
       veritatis velit assumenda soluta sed ad, omnis alias placeat debitis
       voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem! "
 ---
-Design development is always an exciting challenge which we're happy to accept! While working on full cg video with 3d animation of Robert the Robot we also created some composition design options for the scenes.
+Design development is always an exciting challenge which we're happy to accept! While working on full cg video with 3d animation of Robert the Robot we also created some composition design options for the scenes. 123
